@@ -1,0 +1,122 @@
+.footer {
+	@media screen and (min-width: 768px){
+		display: flex;
+	}
+}
+
+.logo--footer {
+	margin-top: 16px;
+	text-align: center;
+	@media screen and (min-width: 768px) and (max-width: 1023px) {
+		display: inline-block;
+		padding-left: 20px;
+		margin-top: 18px;
+		margin-right: 2.6em;
+	}
+	@media screen and (min-width: 1024px) {
+		display: inline-block;
+		padding-left: 16%;
+		margin-top: 18px;
+		margin-right: 6%;
+
+	}
+}
+
+.row {
+	display: flex;
+	justify-content: space-around;
+	width: 66%;
+	margin: auto;
+	margin-top: 2px;
+	@media screen and (min-width: 768px) and (max-width: 1023px) {
+		flex-direction: column;
+		width: 100%;
+		margin-top: 5px;
+	}
+	@media screen and (min-width: 1024px) {
+		flex-direction: column;
+		width: 100%;
+		margin-top: 5px;
+	}
+}
+
+.menu {
+	margin-top: -5px;
+	padding: 0;
+	list-style: none;
+	@media screen and (min-width: 768px) {
+		display: inline-block;
+		margin-top: 23px;
+		margin-right: 96px;
+		&:last-child {
+			vertical-align: top;
+		}
+	}
+	&-container {
+		@media screen and (min-width: 768px) and (max-width: 1023px) {
+			display: inline-block;
+			margin-right: 2%;
+		}
+		@media screen and (min-width: 1024px) {
+			display: inline-block;
+			margin-right: 25px;
+		}
+		@media screen and (min-width: 1200px) {
+			margin-right: 18.6%;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	&__title {
+		margin-bottom: 0;
+		text-align: center;
+		font-family: montserratbold;
+		color: $titleDark;
+		font-size: .9em;
+	}
+	
+	&__item {
+		display: block;
+		font-family: $mainFont;
+		color: $mainText;	
+		font-size: .9em;
+		@media screen and (min-width: 768px) and (max-width: 1023px) {
+			display: inline-block;
+			margin-top: 9px;
+		}
+		@media screen and (min-width: 1024px) {
+			display: inline-block;
+			margin-top: 9px;
+
+		}
+	}
+}
+
+.copy {
+	text-align: center;
+	@media screen and (min-width: 768px) and (max-width: 1023px) {
+		margin-top: 26px;
+		text-align: right;
+	}
+	@media screen and (min-width: 1024px) {
+		margin-top: 26px;
+		text-align: right;
+
+	}
+	&__title {
+		margin-bottom: 7px;
+		text-transform: uppercase;
+		font-family: montserratbold;
+		color: $lightText;	
+		font-size: .65em;	
+	}
+	
+	&__link {
+		text-decoration: none;
+		color: inherit;
+	}
+
+}

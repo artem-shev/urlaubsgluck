@@ -1,0 +1,55 @@
+@import "../img/sprites/sprites";
+@import "fonts";
+@import "variables";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.task {
+	margin-bottom: 10px;
+	background-color: silver;
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1441px;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	@media screen and (min-width: 768px) and (max-width: 1023px) {}
+	@media screen and (min-width: 1024px) {}
+}
+
+.btn {
+	border: 3px solid $btnColor;
+	border-radius: 20px;
+	padding: 5px 10px;
+	&--bgc {
+		background-color: $btnColor;
+	}
+}
+
+.centered {
+	text-align: center;
+}
+
+.hide-dev {
+	display: none;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+@import "header/header";
+@import "main/main";
+@import "footer/footer";

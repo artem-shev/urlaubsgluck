@@ -1,0 +1,38 @@
+%mainTitle {
+	text-align: center;
+	font-family: montserratbold;
+	color: #333333;
+	font-size: 1.3em;
+	line-height: 1.2em;
+	
+	@media screen and (min-width: 768px) and (max-width: 1023px) {
+		letter-spacing: .01em;
+	}
+	@media screen and (min-width: 1024px) {
+		letter-spacing: .02em;
+
+	}
+	
+}
+%mainText {
+	font-family: roboto_condensedlight;
+	color: grey;
+}
+
+%flexSA {
+	display: flex;
+	justify-content: space-around;
+} 
+
+// colors
+$btnColor: #ff4e50;
+
+//title
+$titleLight: white;
+$titleDark: #333333;
+$titleFont: montserratbold;
+
+$mainFont: roboto_condensedlight;
+$lightText: #e6dbd8;
+$mainText: grey;
+$darkText: #333333;

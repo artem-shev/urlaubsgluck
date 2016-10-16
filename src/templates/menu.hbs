@@ -1,0 +1,12 @@
+{{#each data}}
+		<ul class="menu">
+			<p class="menu__title">
+				<a href="{{this.title.url}}">{{this.title.name}}</a>
+			</p>
+			<div class="row">
+				{{#each this.items}}
+					<li class="menu__item"><a href="{{this.url}}" class="menu__link">{{this.name}}</a></li>
+				{{/each}}
+			</div>
+		</ul>
+{{/each}}

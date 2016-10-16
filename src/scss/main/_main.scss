@@ -1,0 +1,13 @@
+@import "descr/descr";
+@import "partners/partners";
+@import "activities/activities";
+
+
+
+.content {
+	border-bottom: 4px solid $btnColor;
+	padding-bottom: 40px;
+	@media screen and (min-width: 1024px) {
+		padding-bottom: 90px;
+	}
+}

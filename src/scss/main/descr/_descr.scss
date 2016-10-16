@@ -1,0 +1,152 @@
+.descr {
+	padding-top: 35px;
+	
+	@media screen and (min-width: 768px) and (max-width: 1023px) {
+		padding-top: 94px;
+		margin-bottom: 67px;
+	}
+	@media screen and (min-width: 1024px) {
+		padding-top: 97px;
+	}
+	
+	&__title {
+	margin-top: 0;
+	margin-bottom: 0;
+	@extend %mainTitle;
+	text-align: center;
+
+	@media screen and (min-width: 1024px) {
+		letter-spacing: 1px;
+	}
+	
+	}
+}	
+
+.slider {
+	width: 300px;
+	margin: auto;
+	@media screen and (max-width: 330px) {
+		width: 95%;
+	}
+	@media screen and (max-width: 767px) {
+		margin-bottom: 3px;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1023px) {
+		width: 236px;
+	}
+	@media screen and (min-width: 1024px) {
+		width: 300px;
+		height: auto;
+	}
+	&-container {
+		width: 90%;
+		margin: auto;
+		margin-top: 14px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		@media screen and (min-width: 768px) and (max-width: 1023px) {
+			width: 100%;
+			margin-top: 34px;
+			flex-direction: row;
+		}
+		@media screen and (min-width: 1024px) {
+			width: 964px;
+			margin-top: 34px;
+			flex-direction: row;
+		}
+		@media screen and (min-width: 1550px) {
+			width: 67%;
+		}	
+	}
+	&__item {
+		position: relative;
+		margin-top: 0;
+		margin-bottom: 3px;
+	}
+	&__fc {
+		position: absolute;
+		top: 23.3%;
+		left: 0;
+		padding: 10px 20px;
+		@media screen and (max-width: 330px) {
+			padding: 0 21%;
+		}
+		@media screen and (min-width: 768px) and (max-width: 1023px) {
+			top: 52%;
+		}
+		@media screen and (min-width: 1024px) {
+			top: 53%;
+		}		
+	}
+	&__img {
+		height: 240px;
+		width: 250px;
+		@media screen and (min-width: 1024px) {
+			width: auto;
+			height: auto;
+		}
+	}
+	&__name {
+		display: inline-block;
+		padding: 2px 15px;
+		text-transform: uppercase;
+		font-family: $titleFont;
+		color: $titleLight;
+		font-size: 0.6em;
+		text-decoration: none;
+	}
+	&__title {
+		font-family: $titleFont;		
+		color: $titleLight;
+		font-size: 1.4em;
+		line-height: 1.35em;
+		margin-bottom: 5px;
+		@media screen and (max-width: 330px) {
+			margin-top: 5px
+		}
+		@media screen and (min-width: 768px) and (max-width: 1023px) {
+			margin-top: 8px;
+		}
+	}
+	&__text {
+		margin-top: 0;
+		@extend %mainText;
+		font-size: 0.95em;
+	}
+}
+
+.flickity-prev-next-button {
+		background-color: hsla(0, 0%, 100%, 0);
+		color: white;
+}
+
+.flickity-prev-next-button.next {
+	@media screen and (max-width: 350px) {
+		display: none;
+	}
+	@media screen and (max-width: 767px) {
+		right: -35px;
+	}
+}
+.flickity-prev-next-button.previous {
+	@media screen and (max-width: 350px) {
+		display: none;
+	}
+	@media screen and (max-width: 767px) {
+		left: -35px
+	}
+}
+.flickity-page-dots {
+	@media screen and (max-width: 767px) {
+		display: none;
+	}	
+}
+
+.flickity-viewport {
+	min-height: 400px;
+	@media screen and (max-width: 767px){
+		min-height: 240px;
+	}	
+
+}

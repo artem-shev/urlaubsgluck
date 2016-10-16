@@ -1,0 +1,160 @@
+.header {
+	position: relative;
+	height: 540px;
+	padding: 1px; 
+	background: url(../img/head_bg.jpg) top center no-repeat;
+	background-size: auto 100%;
+	
+	@media screen and (min-width: 768px){
+		height: 700px;
+	}
+
+
+}
+
+.auth {
+	width: 100%;
+	position: absolute;
+	top: 20px;
+	right: 0;
+	text-align: center;
+	font-size: 0.9em;
+	
+	@media screen and (min-width: 768px) and (max-width: 1023px) {
+		width: auto;
+		top: 37px;
+		text-align: right;
+		padding-right: 49px;
+	}
+	@media screen and (min-width: 1024px) {
+		width: auto;
+		top: 40px;
+		text-align: right;
+		padding-right: 253px;
+	}
+
+	&__login {
+		background: none;
+		margin: 0 9px 0 -10px;
+		border: none;		
+		font-family: $titleFont;
+		color: $titleLight;
+		cursor: pointer;
+	}
+	&__sign-up {
+		width: 90px;
+		background: none;
+		border: 3px solid white;
+		border-radius: 1.2em;
+		line-height: 2em;	
+		font-family: $titleFont;
+		color: $titleLight;
+		cursor: pointer;
+	
+		@media screen and (min-width: 768px) and (max-width: 1023px) {
+			min-height: 34px;
+			border: 2px solid white;
+		}
+		@media screen and (min-width: 1024px) {
+			border: 2px solid white;
+			line-height: 2.2em;
+		}
+	}
+}
+
+
+.logo--header {
+	text-align: center;
+	margin-top: 170px;
+	@media screen and (min-width: 768px) and (max-width: 1023px) {
+		margin-top: 43px;
+		padding-left: 47px;
+		text-align: left;
+	}
+	@media screen and (min-width: 1024px) {
+		margin-top: 46px;
+		margin-bottom: -3px;
+		text-align: left;
+		padding-left: 250px;
+	}
+
+}
+
+
+.greeting {
+	margin-top: 30px;
+	text-align: center;
+	@media screen and (min-width: 768px) and (max-width: 1023px) {
+		width: 70%;
+		margin: auto;
+		margin-top: 146px;
+	}
+	@media screen and (min-width: 1024px) {
+		width: 35%;
+		margin: auto;
+		margin-top: 149px;
+	}
+	&__title{
+		margin-bottom: 10px;
+		text-transform: uppercase;
+		font-family: $titleFont;
+		font-size: 1.9em;
+		color: $titleLight;
+		// letter-spacing: -1px;
+		@media screen and (min-width: 768px) and (max-width: 1023px) {
+			margin-bottom: 22px;
+			font-size: 3.1em;
+			line-height: 1.25em;
+			letter-spacing: 2px;
+		}
+		@media screen and (min-width: 1024px) {
+			margin-bottom: 24px;
+			font-size: 3.2em;
+			line-height: 1.2em;
+			letter-spacing: 1px;
+		}
+	}
+	&__text {
+		width: 65%;
+		margin: 0 auto;
+		margin-top: 11px;
+		margin-bottom: 11px;
+		font-family: $mainFont;
+		color: $lightText;
+		font-size: 1.15em;
+		letter-spacing: 0.6px;
+		@media screen and (min-width: 768px) and (max-width: 1023px) {
+			width: 100%;
+			font-size: 1.5em;
+			letter-spacing: 1.45px;
+		}
+		@media screen and (min-width: 1024px) {
+			width: 100%;
+			font-size: 1.5em;
+			letter-spacing: 1.3px;
+		}
+	}
+	&__link {
+		display: block;
+		width: 281px;
+		margin: 0 auto;
+		margin-top: 16px;
+		border-radius: 2em;
+		line-height: 1.6em;
+		text-decoration: none;
+		color: $titleLight;
+		font-family: $titleFont;
+		font-size: .9em;
+		@media screen and (max-width: 300px) {
+			width: 90%;
+		}
+		@media screen and (min-width: 768px) and (max-width: 1023px) {
+			width: 225px;
+			margin-top: 32px;
+		}
+		@media screen and (min-width: 1024px) {
+			width: 225px;
+			margin-top: 33px;
+		}
+	}
+}
