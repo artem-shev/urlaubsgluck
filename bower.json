@@ -1,0 +1,49 @@
+{
+  "name": "urlaubsgluck",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "artem-shev"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.1.0"
+  },
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "flickity": "^2.0.2",
+    "isotope": "^3.0.1",
+    "handlebars": "^4.0.5",
+    "imagesloaded": "^4.1.0",
+    "picturefill": "^3.0.2",
+    "imagefill": "*"
+  },
+    "overrides": {
+    "outlayer": {
+      "main": [
+        "item.js",
+        "outlayer.js"
+      ]
+    },
+    "isotope": {
+      "main": "dist/isotope.pkgd.js"
+    },
+    "flickity": {
+      "main": [
+        "dist/flickity.pkgd.js",
+        "css/flickity.css"
+      ]
+    },
+    "imagefill": {
+    	"main": "js/jquery-imagefill.js"
+    }
+  }
+}

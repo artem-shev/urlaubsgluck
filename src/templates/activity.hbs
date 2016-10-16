@@ -1,0 +1,6 @@
+{{#each data}}
+	<figure class="activity__item">
+		<img src="{{this.webformatURL}}" alt="{{this.tags}}" class="activity__img">
+		<figcaption class="activity__descr"><a href="{{this.pageURL}}" class="activity__link">{{this.tags}}</a></figcaption>
+	</figure>
+{{/each}}

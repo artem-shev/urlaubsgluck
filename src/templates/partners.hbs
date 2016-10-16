@@ -1,0 +1,12 @@
+{{#each data}}
+	<div class="partners__item">
+	
+		<div class="partners__img">
+			<img src="{{this.photo}}" alt="" class="partners__ava">
+			<div class="partners__icon {{this.favicon}}"></div>
+		</div>
+		<p class="partners__name"><a href="{{this.link}}" class="partners__link">{{this.name}}</a></p>
+	
+		<p class="partners__text">{{this.info}}</p>
+	</div>
+{{/each}}

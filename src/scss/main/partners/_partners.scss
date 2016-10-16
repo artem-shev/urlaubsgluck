@@ -1,0 +1,130 @@
+.partners {
+	width: 90%;
+	margin: auto;
+	padding-top: 4px;
+		@media screen and (min-width: 1024px) {
+			padding-top: 70px;
+		}
+	&__title {
+		@extend %mainTitle;
+		margin-bottom: 14px;
+		@media screen and (max-width: 767px) {
+			margin-top: 40px;
+		}
+		@media screen and (min-width: 768px) {
+			margin-bottom: 31px;
+		}
+	}
+	&-container {
+		margin-bottom: 5px;
+		display: flex;
+		flex-direction: column;
+		@media screen and (min-width: 768px) and (max-width: 1023px) {
+			width: 75%;
+			margin: auto;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		@media screen and (min-width: 1024px) {
+			width: 74%;
+			margin: auto;
+			flex-direction: row;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+	}
+	&__link {
+		color: inherit;
+		text-decoration: none;
+	}
+	&__item {
+		text-align: center;
+		margin-bottom: 24px;
+
+		&:nth-child(1) { order:1; }
+		&:nth-child(2) { order:3; }
+		&:nth-child(3) { order:2; }
+		&:nth-child(4) { order:4; }
+
+		@media screen and (min-width: 768px) and (max-width: 1023px) {
+			width: 50%;
+			margin-bottom: 26px;
+			&:nth-child(2) { order:2; }
+			&:nth-child(3) { order:3; }
+		}
+		@media screen and (min-width: 1024px) {
+			width: 25%;
+			margin-bottom: 23px;
+			&:nth-child(2) { order:2; }
+			&:nth-child(3) { order:3; }
+
+		}
+	}
+	&__img {
+		position: relative;
+		display: inline-block;
+	}
+	&__ava {
+		border-radius: 50%;
+	}
+	&__name {
+		margin-bottom: 12px;
+		@extend %mainTitle;
+		font-size: .9em;
+	}
+	&__btn {
+		display: block;
+		text-align: center;
+		padding: 8px 5px;
+		margin-top: -8px;
+		text-decoration: none;
+		font-family: $titleFont;
+		color: $btnColor;
+
+		@media screen and (min-width: 768px) and (max-width: 1023px) {
+			width: 28%;
+			margin: auto;
+			margin-top: -3px;
+			border: 2px solid $btnColor;
+			font-weight: bold;
+			font-size: .9em;
+			line-height: 1.5em;
+		}
+		@media screen and (min-width: 1024px) {
+			width: 15%;
+			margin: auto;
+		}
+
+		
+	}
+	&__text {
+		width: 70%;
+		margin: auto;
+		@extend %mainText;
+		font-size: .95em;
+		@media screen and (min-width: 1024px) {
+			width: 90%;
+		}
+	}
+}
+
+//icons 
+
+.icon {
+	position: absolute;
+	top: 85px;
+	right: -3px;
+
+	&--tv {
+		@include sprite($tv)
+	}
+	&--cup {
+		@include sprite($cup)
+	}
+	&--tube {
+		@include sprite($tube)
+	}
+	&--plane {
+		@include sprite($plane)
+	}
+}

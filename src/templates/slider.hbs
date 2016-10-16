@@ -1,0 +1,20 @@
+{{#each data}}
+	<div class="slider">
+		{{#each this}}
+			<figure class="slider__item">
+				<picture>
+					<!--[if IE 9]><video style="display: none;"><![endif]-->
+					<source srcset="{{this.img.large}}" media="(min-width: 1024px)">
+					<source srcset="{{this.img.medium}}" media="(min-width: 768px)">
+					<!--[if IE 9]></video><![endif]-->
+					<img srcset="{{this.img.small}}" alt="{{this.name}}" class="slider-img">
+				</picture>
+				<figcaption class="slider__fc">
+					<a href="{{this.url}}" class="slider__name btn btn--bgc ">{{this.name}}</a>
+					<p class="slider__title">{{this.title}}</p>
+					<p class="slider__text">{{this.text}}</p>
+				</figcaption>
+			</figure>
+		{{/each}}
+	</div>
+{{/each}}

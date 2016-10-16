@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Urlaubsglück</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<!-- build:css(src) css/vendor.css -->
+	<!-- bower:css -->
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+<div class="wrapper">
+	<header class="header">
+		<div class="logo logo--header">
+			<a href="#" class="logo__link"><img src="img/logo_white.png" alt="Urlaubsglück"></a>
+		</div>
+		<section class="auth">
+			<form action="#" name="authForm">
+				<button class="auth__login">Log in</button>
+				<button class="auth__sign-up">Sign up</button>
+			</form>
+		</section>
+		<article class="greeting">
+			<h2 class="greeting__title">Share your holiday dreams</h2>
+			<p class="greeting__text">And find the perfect partner to fullfill it</p>
+			<a href="#" class="btn btn--bgc greeting__link">Find your holliday partner</a>
+		</article>
+	</header>
+	<main class="content">
+		<section class="descr">
+			<h3 class="descr__title">How Urlaubsglück works?</h3>
+
+			<div class="slider-container"></div>
+
+		</section>
+
+		<section class="partners">
+			<h3 class="partners__title">Meet a partner for your best holiday</h3>
+			
+			<div class="partners-container"></div>
+			
+			<a href="#" class="btn btn--trnsp  partners__btn">See other partners</a>
+			
+		</section>
+
+		<section class="activity">
+			<h3 class="activity__title">Discover holiday activity ideas</h3>
+
+			<div class="activity-container">
+				<div class="activity__sizer"></div>
+			</div>
+			
+			<div class="search">
+				<h3 class="search__title">Discover holiday activity ideas</h3>
+				<p class="search__request search__text">Hi! What are your holiday interests?</p>
+				<form action="#" name="activities">
+					<div class="search__group">
+						<input type="text" name="interests" placeholder="Enter your interests" class="search__inp search__text">
+						<button class="search__submit btn btn--bgc">Search partners</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="logo logo--footer">
+			<a href="#" class="logo logo--footer"><img src="img/logo_pink.png" alt=""></a>
+		</div>
+		<nav class="menu-container"></nav>
+		<div class="copy">
+			<p class="copy__title">Designed by</p>
+			<a href="#" class="copy__logo"><img src="img/developer_logo.png" alt=""></a><br>
+			<a href="https://github.com/artem-shev/urlaubsgluck" class="copy__link">&lt; &gt; Source code</a>
+		</div>
+	</footer>
+	
+</div>
+
+	<!-- build:js(src) scripts/vendor.js -->
+	<!-- bower:js -->
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:js scripts/main.js -->
+	<script src="js/templates.js"></script>
+	<script src="js/data.js"></script>
+	<script src="js/app.js"></script>
+	<!-- endbuild -->
+
+</body>
+</html>
